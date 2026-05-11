@@ -12,7 +12,7 @@ async def reminder():
     while True:
         await bot.send_message(
             chat_id=5336869933,
-            text="💧 Drink Water!"
+            text="💧 Water Taagu!   "
         )
 
         print("Message Sent")
