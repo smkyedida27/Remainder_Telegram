@@ -10,16 +10,12 @@ async def reminder():
     print("Bot Started")
 
     while True:
-        try:
-            await bot.send_message(
-                chat_id=5336869933,
-                text="💧 Drink Water!"
-            )
+        await bot.send_message(
+            chat_id=5336869933,
+            text="💧 Drink Water!"
+        )
 
-            print("Message Sent")
-
-        except Exception as e:
-            print(e)
+        print("Message Sent")
 
         await asyncio.sleep(10)
 
