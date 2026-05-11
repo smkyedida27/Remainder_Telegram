@@ -14,6 +14,6 @@ async def water_reminder():
         )
 
         # 1.5 hours
-        await asyncio.sleep(5400)
+        await asyncio.sleep(15)
 
 asyncio.run(water_reminder())
