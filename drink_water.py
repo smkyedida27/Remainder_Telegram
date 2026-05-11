@@ -6,14 +6,21 @@ CHAT_ID = "5336869933"
 
 bot = Bot(token=TOKEN)
 
-async def water_reminder():
+async def reminder():
+    print("Bot Started")
+
     while True:
-        await bot.send_message(
-            chat_id=CHAT_ID,
-            text="💧 Water Taagu"
-        )
+        try:
+            await bot.send_message(
+                chat_id=5336869933,
+                text="💧 Drink Water!"
+            )
 
-        # 1.5 hours
-        await asyncio.sleep(3600)
+            print("Message Sent")
 
-asyncio.run(water_reminder())
+        except Exception as e:
+            print(e)
+
+        await asyncio.sleep(10)
+
+asyncio.run(reminder())
